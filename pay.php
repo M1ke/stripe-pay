@@ -1,5 +1,5 @@
 <?php
-require '_config.php';
+require '_require.php';
 
 Stripe::setApiKey(STRIPE_SECRET);
 try {
