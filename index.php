@@ -47,7 +47,7 @@ if (isset($_GET['paid'])){
                     <div class="form-group">
                         <label for="inputEmail3" class="col-sm-2 control-label">Amount</label>
                         <div class="col-sm-6">
-                            <input type="text" name="pay" class="form-control" placeholder="Amount" <?=$_GET['amount']?>>
+                            <input type="text" name="pay" class="form-control" placeholder="Amount" value="<?=$_GET['amount']?>">
                         </div>
                     </div>
                     <div class="form-group">
