@@ -35,6 +35,12 @@ function redirect($url=null,$debug=false,$header=null){
 
 define('DIR',__DIR__.'/');
 
+// Add your own config variables here
+
+$config=[
+	'title'=>'Ground Control Skydiving',
+];
+
 /* Create a separate file called _config.php with the following
 	If adding to public repo ensure this is in .gitignore
 

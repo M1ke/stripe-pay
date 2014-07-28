@@ -13,8 +13,6 @@ require '_require.php';
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -24,8 +22,8 @@ require '_require.php';
         <![endif]-->
         <div class="container">
             <div class="jumbotron">
-              <h1>Ground Control Skydiving</h1>
-              <p>This page lets you pay for services from Ground Control. Thanks for your custom!</p>
+              <h1><?=$config['title']?></h1>
+              <p>This page lets you pay for services. Thanks for your custom!</p>
             </div>
 <?php
 if (isset($_GET['paid'])){
