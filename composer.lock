@@ -4,79 +4,27 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d0e50eca5a8b341722a8db33e35795b4",
+    "hash": "d3390ae0442a8f016776bc1c0f1e907f",
     "packages": [
         {
-            "name": "m1ke/easy-site",
+            "name": "m1ke/git-php-lint",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "/home/m1ke/web/lib/php/easy-site",
-                "reference": "507449ddee54ed32af8d89d5bd1be72089a1e666"
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "phpmailer/phpmailer": "dev-master"
+                "url": "/home/m1ke/web/lib/php/git-php-lint",
+                "reference": "27ef5afc118444349c4cb3fa101d35d86216b9c3"
             },
             "type": "library",
+            "scripts": {
+                "post-install-cmd": [
+                    "bash shell/setup"
+                ]
+            },
             "license": [
                 "MIT"
             ],
-            "description": "A functional set of utilities for PHP websites",
-            "time": "2014-07-23 12:01:42"
-        },
-        {
-            "name": "phpmailer/phpmailer",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "1522094b825f37a7c7235d863555f3d12e01f677"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/1522094b825f37a7c7235d863555f3d12e01f677",
-                "reference": "1522094b825f37a7c7235d863555f3d12e01f677",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.0.0"
-            },
-            "require-dev": {
-                "phpdocumentor/phpdocumentor": "*",
-                "phpunit/phpunit": "4.1.*"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "class.phpmailer.php",
-                    "class.pop3.php",
-                    "class.smtp.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-2.1"
-            ],
-            "authors": [
-                {
-                    "name": "Jim Jagielski",
-                    "email": "jimjag@gmail.com"
-                },
-                {
-                    "name": "Marcus Bointon",
-                    "email": "phpmailer@synchromedia.co.uk"
-                },
-                {
-                    "name": "Andy Prevost",
-                    "email": "codeworxtech@users.sourceforge.net"
-                },
-                {
-                    "name": "Brent R. Matzelle"
-                }
-            ],
-            "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2014-07-09 21:56:40"
+            "description": "Easily lint PHP files when commiting",
+            "time": "2014-07-28 10:56:34"
         },
         {
             "name": "stripe/stripe-php",
@@ -135,7 +83,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "m1ke/easy-site": 20
+        "m1ke/git-php-lint": 20
     },
     "prefer-stable": false,
     "platform": [

@@ -1,4 +1,4 @@
-/*> ../jspp_imports/base.js */
+/*@include ../jspp_imports/base.js */
 
 $(function(){
 	$('.stripe-pay').click(function(e){

@@ -2,10 +2,6 @@
     "name": "stripe-pay",
     "authors": [
         {
-            "name": "vetman",
-            "email": "jeff@micro-ram.com"
-        },
-        {
             "name": "M1ke",
             "email": "mike@m1ke.me"
         }
@@ -13,12 +9,12 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "/home/m1ke/web/lib/php/easy-site"
+            "url": "/home/m1ke/web/lib/php/git-php-lint"
         }
     ],
     "require": {
-        "m1ke/easy-site": "dev-master",
-        "stripe/stripe-php": "1.*"
+        "stripe/stripe-php": "1.*",
+        "m1ke/git-php-lint": "dev-master"
     },
     "minimum-stability": "dev"
 }

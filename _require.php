@@ -1,6 +1,37 @@
 <?php
 require 'vendor/autoload.php';
-require 'vendor/m1ke/easy-site/init.php';
+
+function file_save_($file,$string,$overwrite){
+	$fh=@fopen($file,$overwrite ? 'w' : 'a');
+	if (!empty($fh)){
+		fwrite($fh,$string);
+		fclose($fh);
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+function log_file($log,$var=null,$file='logs/main.log',$overwrite=false){
+	$date=date('Y-m-d H:i:s');
+	$log='----Logged on '.$date.' ----'.PHP_EOL.PHP_EOL.'$'.$var.': '.(is_array($log) ? print_r($log,true) : $log).PHP_EOL.PHP_EOL;
+	file_save_($file,$log,$overwrite);
+	return true;
+}
+
+function redirect($url=null,$debug=false,$header=null){
+	if (empty($url)){
+		$url=$_SERVER['HTTP_REFERER'];
+	}
+	if ($debug){
+		echo $url;
+	}
+	else {
+		header('location:'.$url);
+	}
+	die;
+}
 
 define('DIR',__DIR__.'/');
 
@@ -10,3 +41,7 @@ define('DIR',__DIR__.'/');
 define('STRIPE_SECRET','');
 define('STRIPE_KEY','');
  */
+
+if (!include('_config.php')){
+	die('The configuration could not be found. Pleaes create a file called "_config.php"');
+}

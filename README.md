@@ -1,6 +1,6 @@
-# HTML5 Boilerplate with Sass and Git deploy
+# Stripe Pay
 
-Quick website templated based on HTML5 Boiler Plate using the Compass HTML5BP plugin.
+Simple bootstrap template for taking a single payment with [Stripe JS](https://stripe.com).
 
 ## Deployment
 
