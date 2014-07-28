@@ -1,0 +1,6 @@
+.sass-cache/
+/assets/
+/vendor/
+/logs/
+composer.phar
+_config.php
