@@ -49,5 +49,5 @@ define('STRIPE_KEY','');
  */
 
 if (!include('_config.php')){
-	die('The configuration could not be found. Pleaes create a file called "_config.php"');
+	die('The configuration could not be found. Please create a file called "_config.php"');
 }

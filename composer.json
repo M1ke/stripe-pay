@@ -7,10 +7,6 @@
         }
     ],
     "repositories": [
-        {
-            "type": "vcs",
-            "url": "/home/m1ke/web/lib/php/git-php-lint"
-        }
     ],
     "require": {
         "stripe/stripe-php": "1.*",

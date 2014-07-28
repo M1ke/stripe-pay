@@ -4,27 +4,29 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d3390ae0442a8f016776bc1c0f1e907f",
+    "hash": "c126a8e29683c2294c400ffbd9ab11b9",
     "packages": [
         {
             "name": "m1ke/git-php-lint",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "/home/m1ke/web/lib/php/git-php-lint",
-                "reference": "27ef5afc118444349c4cb3fa101d35d86216b9c3"
+                "url": "https://github.com/M1ke/git-php-lint.git",
+                "reference": "3ac95a6fcab8724ed945955aa1859502e1046568"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/M1ke/git-php-lint/zipball/3ac95a6fcab8724ed945955aa1859502e1046568",
+                "reference": "3ac95a6fcab8724ed945955aa1859502e1046568",
+                "shasum": ""
             },
             "type": "library",
-            "scripts": {
-                "post-install-cmd": [
-                    "bash shell/setup"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Easily lint PHP files when commiting",
-            "time": "2014-07-28 10:56:34"
+            "time": "2014-07-28 11:01:57"
         },
         {
             "name": "stripe/stripe-php",
