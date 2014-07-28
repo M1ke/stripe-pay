@@ -1,0 +1,14 @@
+$desktopSize: 1020px;
+$desktopWidth: 950px;
+$desktopPadding: 20px;
+$desktopPadded: $desktopWidth + (2 * $desktopPadding);
+$tabletMax: $desktopSize - 1;
+$tabletExtra: 780px;
+$tabletSize: 760px;
+$tabletWidth: 720px;
+$phabletMax: $tabletSize - 1;
+$phabletSize: 600px;
+$phabletWidth: 580px;
+$mobileMax: $phabletSize - 1;
+$mobileSize: 360px;
+$mobileWidth: 320px;
