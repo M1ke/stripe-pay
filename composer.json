@@ -6,11 +6,8 @@
             "email": "mike@m1ke.me"
         }
     ],
-    "repositories": [
-    ],
     "require": {
         "stripe/stripe-php": "1.*",
-        "m1ke/git-php-lint": "dev-master"
-    },
-    "minimum-stability": "dev"
+        "m1ke/git-php-lint": "1.0.0"
+    }
 }

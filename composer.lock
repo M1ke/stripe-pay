@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c126a8e29683c2294c400ffbd9ab11b9",
+    "hash": "702bc722a79fc4c6737f9208cab3b79a",
     "packages": [
         {
             "name": "m1ke/git-php-lint",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/M1ke/git-php-lint.git",
-                "reference": "3ac95a6fcab8724ed945955aa1859502e1046568"
+                "reference": "88bd973ae0a91d0c94be5876d4893dc9e4ecd5af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/M1ke/git-php-lint/zipball/3ac95a6fcab8724ed945955aa1859502e1046568",
-                "reference": "3ac95a6fcab8724ed945955aa1859502e1046568",
+                "url": "https://api.github.com/repos/M1ke/git-php-lint/zipball/88bd973ae0a91d0c94be5876d4893dc9e4ecd5af",
+                "reference": "88bd973ae0a91d0c94be5876d4893dc9e4ecd5af",
                 "shasum": ""
             },
             "type": "library",
@@ -26,7 +26,7 @@
                 "MIT"
             ],
             "description": "Easily lint PHP files when commiting",
-            "time": "2014-07-28 11:01:57"
+            "time": "2014-07-29 11:31:49"
         },
         {
             "name": "stripe/stripe-php",
@@ -83,10 +83,10 @@
     "aliases": [
 
     ],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "m1ke/git-php-lint": 20
-    },
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ],
     "prefer-stable": false,
     "platform": [
 

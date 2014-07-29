@@ -16,6 +16,10 @@ JS is compiled using [gulp](http://gulpjs.com). Run `gulp scripts` to concatenta
 
 SASS is compiled using [compass](http://compass-style.org). Run `compass compile`. There is a `gulp` SASS compiler included in the `npm` packages but it gives me an error on running.
 
+This project includes a [git pre-commit PHP linter](https://github.com/M1ke/git-php-lint). This requires an extra step to install and symlinks a script into your `.git/hooks` directory. For security this is included by composer with a fixed version. Run the following to install after running `composer` as above:
+
+    ./vendor/m1ke/git-php-lint/shell/setup
+
 ### Deployment
 
 Designed to be [deployed using git](https://github.com/M1ke/git-deploy).
