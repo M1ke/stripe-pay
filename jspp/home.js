@@ -9,16 +9,16 @@ $(function(){
 			return false;
 		}
 		var handler=StripeCheckout.configure({
-			key:$(this).data('stripe'),
-			image:'http://gcskydiving.com/images/avatar-128.png',
-			token:function(token){
+			key: $(this).data('stripe'),
+			image: 'http://gcskydiving.com/images/avatar-128.png',
+			token: function(token){
 				var $input=$('[name="stripe"]').val(token.id);
 				$input.closest('form').submit();
 			}
 		});
 		handler.open({
 			name: 'Ground Control Skydiving'
-			,description: 'Subscription ($'+value+')'
+			,description: 'Subscription ('+$('[name="currency"] option:selected').data('symbol')+value+')'
 			,amount: (value*100)
 			,email: 'info@gcskydiving.com'
 			,currency: $('[name="currency"]').val()

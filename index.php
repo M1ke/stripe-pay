@@ -53,7 +53,7 @@ if (isset($_GET['paid'])){
                     <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">Currency</label>
                         <div class="col-sm-6">
-                            <select name="currency" class="form-control"><option value="usd">US Dollar</option><option value="gbp">British Pound</option></select>
+                            <select name="currency" class="form-control"><option value="usd" data-symbol="$">US Dollar</option><option value="gbp" data-symbol="£"<?= $_GET['uk'] ? ' selected' : ''?>>British Pound</option></select>
                         </div>
                     </div>
                     <div class="form-group">

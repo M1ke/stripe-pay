@@ -4,3 +4,5 @@
 /logs/
 composer.phar
 _config.php
+.phpintel
+node_modules/
